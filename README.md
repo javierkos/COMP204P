@@ -1,1 +1,1 @@
-# Code for COMP204P Scenario Week 3
+# Code for COMP204P Scenario Week 3.
