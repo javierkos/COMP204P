@@ -21,7 +21,8 @@ urlpatterns = [
     # url(r'^$', 'firstdjango.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', views.index, name = 'index'),
+    #url(r'^edit', views.edit, name = 'edit'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^scorepost/', views.scorepost, name = 'scorepost')
+    #url(r'^scorepost/', views.scorepost, name = 'scorepost')
 ]
 
