@@ -3,11 +3,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Result
-import urllib
-def index(request):
-     return render(request, '') 
-   # return HttpResponse('<p> Wellcome! Please add /admin to your url and check the data </p>')
 
+import urllib
+
+
+def index(request):
+     return render(request, 'index.html', {}) 
+
+   # return HttpResponse('<p> Wellcome! Please add /admin to your url and check the data </p>')
 #def edit(request):
    # return HttpResponse('<p>Edit page</p>')
 #def scorepost(request):
