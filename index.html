@@ -5,7 +5,7 @@ form {
     border: 3px solid #f1f1f1;
 }
 
-input[type=text], input[type=password], input[type=email] {
+input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -35,6 +35,10 @@ button {
     margin: 24px 0 12px 0;
 }
 
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
 
 .container {
     padding: 16px;
@@ -60,15 +64,16 @@ span.psw {
 
 <h2>Login Form</h2>
 
+<form action="action_page.php">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
 
   <div class="container">
-    <label><b>Username</b></label><br /> 
-    <input type="text" placeholder="Enter Username" name="uname" required><br /> 
-    
-    <label><b>Email Adress</b></label><br /> 
-    <input type="email" placeholder="Enter Email Adress" name="psw" required><br /> 
-    
-    <label><b>Password</b></label><br /> 
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
         
     <button type="submit">Login</button>
@@ -77,9 +82,11 @@ span.psw {
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw"><a href="#">Forgot password?</a></span>
+    <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
 
 </body>
 </html>
+
+
